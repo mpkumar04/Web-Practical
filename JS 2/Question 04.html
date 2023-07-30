@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Remove items</title>
+  </head>
+  <body>
+    <label for="selectBox">Select from this:</label>
+    <select id="selectBox">
+      <option value="car">Car</option>
+      <option value="van">Van</option>
+      <option value="Bus">Bus</option>
+      <option value="Bike">Bike</option>
+      <option value="Ship">Ship</option>
+    </select>
+
+    <button onclick="removeItem()">Remove</button>
+
+    <script>
+      function removeItem() {
+        const selectBox = document.getElementById("selectBox");
+        const selectedValue = selectBox.value;
+
+        for (let i = 0; i < selectBox.options.length; i++) {
+          if (selectBox.options[i].value === selectedValue) {
+            selectBox.remove(i);
+            break;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

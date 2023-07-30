@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Enable/disable</title>
+  </head>
+  <body>
+    <video id="VPlayer" controls>
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <script>
+      const videoElement = document.getElementById("VPlayer");
+
+      function enableVideo() {
+        videoElement.play();
+      }
+
+      function disableVideo() {
+        videoElement.pause();
+      }
+      videoElement.addEventListener("mouseover", enableVideo);
+      videoElement.addEventListener("mouseout", disableVideo);
+    </script>
+  </body>
+</html>
