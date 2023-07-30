@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("./R.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  background: #128D66;
+}
+table th {
+  color: D3FFFF;
+  background: #de8704;
+}
+table th,
+table td {
+  padding: 12px;
+  margin: 5px;
+}
+table td label {
+  color: #BAC8D1;
+}
+table .bottom {
+  background: #de8704;
+}
+table tr td input[type="submit"] {
+  background: #BAC854;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+}
+table tr td input[type="reset"] {
+  padding: 15px;
+  color: #BAA342;
+  background: #cc145d;
+  border: none;
+  cursor: pointer;
+}
